@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Glimmer Task-1</title>
+    <url>/2021/08/23/Glimmer-Task/</url>
+    <content><![CDATA[<img src="D:\picture\daily.png" alt="daily" style="zoom:100%;" />
+
+<h1 id="1、登录个人主页"><a href="#1、登录个人主页" class="headerlink" title="1、登录个人主页"></a>1、登录个人主页</h1><h2 id="接口给功能"><a href="#接口给功能" class="headerlink" title="接口给功能"></a>接口给功能</h2><blockquote>
+<p>登录个人的主页</p>
+</blockquote>
+<h2 id="URL"><a href="#URL" class="headerlink" title="URL"></a>URL</h2><blockquote>
+<p>JSON</p>
+</blockquote>
+<h2 id="HTTP请求格式"><a href="#HTTP请求格式" class="headerlink" title="HTTP请求格式"></a>HTTP请求格式</h2><blockquote>
+<p>GET</p>
+</blockquote>
+<h2 id="请求参数"><a href="#请求参数" class="headerlink" title="请求参数"></a>请求参数</h2><table>
+<thead>
+<tr>
+<th>参数名</th>
+<th>参数类型</th>
+<th>参数说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>name</td>
+<td>String</td>
+<td>用户名登陆</td>
+</tr>
+<tr>
+<td>pwd</td>
+<td>String</td>
+<td>用户密码</td>
+</tr>
+</tbody></table>
+<h2 id="返回字段"><a href="#返回字段" class="headerlink" title="返回字段"></a>返回字段</h2><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>类型</th>
+<th>简介</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>result</td>
+<td>String</td>
+<td></td>
+</tr>
+<tr>
+<td>str</td>
+<td>String</td>
+<td>登陆状态</td>
+</tr>
+</tbody></table>
+<h2 id="接口实例"><a href="#接口实例" class="headerlink" title="接口实例"></a>接口实例</h2><blockquote>
+<p><a href="https://glimmer.space/">https://glimmer.space</a></p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">&#123;	</span><br><span class="line">	result:<span class="string">&quot;114514&quot;</span>,</span><br><span class="line">	str:<span class="string">&quot;success&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+]]></content>
+  </entry>
+  <entry>
+    <title>glimmer task(daily4)</title>
+    <url>/2021/08/25/glimmer-task(daily4)/</url>
+    <content><![CDATA[<h1 id="合理怀疑学长学姐在坑人"><a href="#合理怀疑学长学姐在坑人" class="headerlink" title="合理怀疑学长学姐在坑人"></a>合理怀疑学长学姐在坑人</h1><p><img src="C:\Users\lenovo\OneDrive\图片\屏幕快照\2021-08-25.png"></p>
+<p>wsl简单？？？？？？？？？？？</p>
+<p>弄了整整一天才装上了xfce4（期间有无数次error<del>心肺停止</del>）</p>
+<p>vm虚拟机两个小时就弄好了。。。</p>
+<h2 id="咳咳"><a href="#咳咳" class="headerlink" title="咳咳"></a>咳咳</h2><p>还是总结一下</p>
+<p>学长学姐说的简单应该是指搭建Linux简单（好像只用了十分钟但只有一个命令操作系统）并且wsl 1好像不够完整要到wsl 2才能有一个不错的体验（比如用    命   令    装    图形操作系统）</p>
+<p>而在vmware上可以直接用iso镜像文件一键式傻瓜解决（yysy有图形操作系统是真的方便）</p>
+]]></content>
+      <tags>
+        <tag>glimmer</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2021/08/23/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>test</title>
+    <url>/1145/01/04/test/</url>
+    <content><![CDATA[<p>3.1415926535</p>
+<span id="more"></span>
+
+<p>897932384626</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">title: test</span><br><span class="line">date: 1145-01-04 19:19:08</span><br><span class="line">categories: water</span><br><span class="line">tags: [inm,test,water]</span><br><span class="line">keywords: 博客文章密码</span><br><span class="line">password: xxx</span><br><span class="line">abstract: 密码：xxx</span><br><span class="line">message:  输入密码，查看文章</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!--more--&gt;</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>water</category>
+      </categories>
+      <tags>
+        <tag>inm</tag>
+        <tag>test</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Question</title>
+    <url>/2021/08/23/%E5%85%B3%E4%BA%8E%E4%B8%AA%E4%BA%BAGit%E4%BD%BF%E7%94%A8%E8%BF%87%E7%A8%8B%E4%B8%AD%E7%9A%84%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<h1 id="关于个人Git使用过程中的问题"><a href="#关于个人Git使用过程中的问题" class="headerlink" title="关于个人Git使用过程中的问题"></a>关于个人Git使用过程中的问题</h1><h2 id="背景：在依据知乎搭建了个人blog后，按照glimmer-daily-task-3出现了冲突现象"><a href="#背景：在依据知乎搭建了个人blog后，按照glimmer-daily-task-3出现了冲突现象" class="headerlink" title="背景：在依据知乎搭建了个人blog后，按照glimmer daily task-3出现了冲突现象"></a>背景：在依据知乎搭建了个人blog后，按照glimmer daily task-3出现了冲突现象</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">error: remote origin already exists.</span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">error: failed to push some refs to &quot;&quot;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p><del>暂无（有点尴尬）</del></p>
+<p><a href="https://blog.csdn.net/qq_45893999/article/details/106273214">error: failed to push some refs to如何解决_尘客-追梦的博客-CSDN博客</a></p>
+<h2 id="进程"><a href="#进程" class="headerlink" title="进程"></a>进程</h2><p>学习了关于Git的一些基本概念与操作（<a href="https://www.bilibili.com/video/BV1FE411P7B3?p=9">【狂神说Java】Git最新教程通俗易懂_哔哩哔哩_bilibili</a>）</p>
+<p>对 gitlab/GitHub/gitee 有了一个大概了解（见上）</p>
+<h2 id="待办"><a href="#待办" class="headerlink" title="待办"></a>待办</h2><p><a href="https://blog.csdn.net/top_code/article/details/50381432">Git 提示fatal: remote origin already exists 错误解决办法_Ricky-CSDN博客</a>(已完成)</p>
+<h2 id="提醒"><a href="#提醒" class="headerlink" title="提醒"></a>提醒</h2><p>建立新的 blog 时用 ‘—‘ 及 ‘title: ’ 建立标题</p>
+]]></content>
+  </entry>
+</search>
