@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+
+  <meta name="description" content="title:初识javatags:[study]  java-1头文件12import java.util.Arrays;import java.util.Scanner;    学习笔记++n&#x2F;n++1234int n &#x3D; 5, post &#x3D; 1, pre &#x3D; 1;pre &#x3D; ++n + pre;   &#x2F;&#x2F; 运算结束后 pre 为 7，n 为 6n &#x3D; 5;post &#x3D; n++ + post;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CH3CH2OH">
+<meta property="og:url" content="http://example.com/2021/10/10/java/index.html">
+<meta property="og:site_name" content="CH3CH2OH">
+<meta property="og:description" content="title:初识javatags:[study]  java-1头文件12import java.util.Arrays;import java.util.Scanner;    学习笔记++n&#x2F;n++1234int n &#x3D; 5, post &#x3D; 1, pre &#x3D; 1;pre &#x3D; ++n + pre;   &#x2F;&#x2F; 运算结束后 pre 为 7，n 为 6n &#x3D; 5;post &#x3D; n++ + post;">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-10-10T02:52:55.121Z">
+<meta property="article:modified_time" content="2021-10-10T02:51:11.499Z">
+<meta property="article:author" content="alcohol">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://example.com/2021/10/10/java/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title> | CH3CH2OH</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">CH3CH2OH</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">alcohol</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-sitemap">
+
+    <a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/10/10/java/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="alcohol">
+      <meta itemprop="description" content="while(1)rp++;">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="CH3CH2OH">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-10-10 10:52:55 / 修改时间：10:51:11" itemprop="dateCreated datePublished" datetime="2021-10-10T10:52:55+08:00">2021-10-10</time>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>4.3k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>4 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <hr>
+<p>title:初识java<br>tags:[study]</p>
+<hr>
+<h1 id="java-1"><a href="#java-1" class="headerlink" title="java-1"></a>java-1</h1><h2 id="头文件"><a href="#头文件" class="headerlink" title="头文件"></a>头文件</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Arrays;</span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="学习笔记"><a href="#学习笔记" class="headerlink" title="学习笔记"></a>学习笔记</h2><h3 id="n-n"><a href="#n-n" class="headerlink" title="++n/n++"></a>++n/n++</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> n = <span class="number">5</span>, post = <span class="number">1</span>, pre = <span class="number">1</span>;</span><br><span class="line">pre = ++n + pre;   <span class="comment">// 运算结束后 pre 为 7，n 为 6</span></span><br><span class="line">n = <span class="number">5</span>;</span><br><span class="line">post = n++ + post;  <span class="comment">// 运算结束后 post 为 6，n 为 6</span></span><br></pre></td></tr></table></figure>
+
+<p>上例中，++n 的值等于 n 自增后的值，即 6，所以 pre 最后得到的值为 7。n++ 的值等于 n 自增前的值，即 5，所以 post 最后得到的值为 6。</p>
+<h3 id="位移运算"><a href="#位移运算" class="headerlink" title="位移运算"></a>位移运算</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> n=<span class="number">7</span>;<span class="comment">//00000111=7</span></span><br><span class="line"><span class="keyword">int</span> a=n&lt;&lt;<span class="number">1</span>;<span class="comment">//00001110=14</span></span><br><span class="line"><span class="keyword">int</span> b=n&gt;&gt;<span class="number">1</span>;<span class="comment">//00000011=3</span></span><br><span class="line"><span class="comment">//对于负数</span></span><br><span class="line"><span class="keyword">int</span> n = <span class="number">-536870912</span>;</span><br><span class="line"><span class="keyword">int</span> a = n &gt;&gt; <span class="number">1</span>;  <span class="comment">// 11110000 00000000 00000000 00000000 = -268435456</span></span><br><span class="line"><span class="comment">//&#x27;&gt;&gt;&gt;/&lt;&lt;&lt;&#x27;</span></span><br><span class="line"><span class="keyword">int</span> n = <span class="number">-536870912</span>;</span><br><span class="line"><span class="keyword">int</span> a = n &gt;&gt;&gt; <span class="number">1</span>;  <span class="comment">// 01110000 00000000 00000000 00000000 = 1879048192</span></span><br></pre></td></tr></table></figure>
+
+<p>仔细观察可发现，左移实际上就是不断地×2，右移实际上就是不断地÷2。</p>
+<h3 id="位运算"><a href="#位运算" class="headerlink" title="位运算"></a>位运算</h3><p>位运算是按位进行与、或、非和异或的运算。</p>
+<p>与运算的规则是，必须两个数同时为<code>1</code>，结果才为<code>1</code>：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">n = <span class="number">0</span> &amp; <span class="number">0</span>; <span class="comment">// 0</span></span><br><span class="line">n = <span class="number">0</span> &amp; <span class="number">1</span>; <span class="comment">// 0</span></span><br><span class="line">n = <span class="number">1</span> &amp; <span class="number">0</span>; <span class="comment">// 0</span></span><br><span class="line">n = <span class="number">1</span> &amp; <span class="number">1</span>; <span class="comment">// 1</span></span><br></pre></td></tr></table></figure>
+
+<p>或运算的规则是，只要任意一个为<code>1</code>，结果就为<code>1</code>：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">n = <span class="number">0</span> | <span class="number">0</span>; <span class="comment">// 0</span></span><br><span class="line">n = <span class="number">0</span> | <span class="number">1</span>; <span class="comment">// 1</span></span><br><span class="line">n = <span class="number">1</span> | <span class="number">0</span>; <span class="comment">// 1</span></span><br><span class="line">n = <span class="number">1</span> | <span class="number">1</span>; <span class="comment">// 1</span></span><br></pre></td></tr></table></figure>
+
+<p>非运算的规则是，<code>0</code>和<code>1</code>互换：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">n = ~<span class="number">0</span>; <span class="comment">// 1</span></span><br><span class="line">n = ~<span class="number">1</span>; <span class="comment">// 0</span></span><br></pre></td></tr></table></figure>
+
+<p>异或运算的规则是，如果两个数不同，结果为<code>1</code>，否则为<code>0</code>：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">n = <span class="number">0</span> ^ <span class="number">0</span>; <span class="comment">// 0</span></span><br><span class="line">n = <span class="number">0</span> ^ <span class="number">1</span>; <span class="comment">// 1</span></span><br><span class="line">n = <span class="number">1</span> ^ <span class="number">0</span>; <span class="comment">// 1</span></span><br><span class="line">n = <span class="number">1</span> ^ <span class="number">1</span>; <span class="comment">// 0</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="关于转型"><a href="#关于转型" class="headerlink" title="关于转型"></a>关于转型</h3><p>要注意，超出范围的强制转型会得到错误的结果，原因是转型时，<code>int</code>的两个高位字节直接被扔掉，仅保留了低位的两个字节</p>
+<h3 id="浮点数"><a href="#浮点数" class="headerlink" title="浮点数"></a>浮点数</h3><h4 id="溢出"><a href="#溢出" class="headerlink" title="溢出"></a>溢出</h4><p>整数运算在除数为<code>0</code>时会报错，而浮点数运算在除数为<code>0</code>时，不会报错，但会返回几个特殊值：</p>
+<ul>
+<li><code>NaN</code>表示Not a Number</li>
+<li><code>Infinity</code>表示无穷大</li>
+<li><code>-Infinity</code>表示负无穷大</li>
+</ul>
+<h4 id="强制转型"><a href="#强制转型" class="headerlink" title="强制转型"></a>强制转型</h4><p>可以将浮点数强制转型为整数。在转型时，浮点数的小数部分会被丢掉。如果转型后超过了整型能表示的最大范围，将返回整型的最大值。例如：</p>
+<h3 id="短路运算"><a href="#短路运算" class="headerlink" title="短路运算"></a>短路运算</h3><p>布尔运算的一个重要特点是短路运算。如果一个布尔运算的表达式能提前确定结果，则后续的计算不再执行，直接返回结果。</p>
+<p>因为<code>false &amp;&amp; x</code>的结果总是<code>false</code>，无论<code>x</code>是<code>true</code>还是<code>false</code>，因此，与运算在确定第一个值为<code>false</code>后，不再继续计算，而是直接返回<code>false</code>。</p>
+<p>如果没有短路运算，<code>&amp;&amp;</code>后面的表达式会由于除数为<code>0</code>而报错，但实际上该语句并未报错，原因在于与运算是短路运算符，提前计算出了结果<code>false</code>。</p>
+<h3 id="字符"><a href="#字符" class="headerlink" title="字符"></a>字符</h3><p>还可以直接用转义字符<code>\u</code>+Unicode编码来表示一个字符：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">// 注意是十六进制:</span><br><span class="line">char c3 = &#x27;\u0041&#x27;; // &#x27;A&#x27;，因为十六进制0041 = 十进制65</span><br><span class="line">char c4 = &#x27;\u4e2d&#x27;; // &#x27;中&#x27;，因为十六进制4e2d = 十进制20013</span><br></pre></td></tr></table></figure>
+
+<h3 id="字符串连接"><a href="#字符串连接" class="headerlink" title="字符串连接"></a>字符串连接</h3><p>Java的编译器对字符串做了特殊照顾，可以使用<code>+</code>连接任意字符串和其他数据类型，这样极大地方便了字符串的处理。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        String s1 = <span class="string">&quot;Hello&quot;</span>;</span><br><span class="line">        String s2 = <span class="string">&quot;world&quot;</span>;</span><br><span class="line">        String s = s1 + <span class="string">&quot; &quot;</span> + s2 + <span class="string">&quot;!&quot;</span>;</span><br><span class="line">        System.out.println(s);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="多行字符串"><a href="#多行字符串" class="headerlink" title="多行字符串"></a>多行字符串</h3><p>从Java 13开始，字符串可以用<code>&quot;&quot;&quot;...&quot;&quot;&quot;</code>表示多行字符串（Text Blocks）了。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        String s = <span class="string">&quot;&quot;</span><span class="string">&quot;</span></span><br><span class="line"><span class="string">                   SELECT * FROM</span></span><br><span class="line"><span class="string">                     users</span></span><br><span class="line"><span class="string">                   WHERE id &gt; 100</span></span><br><span class="line"><span class="string">                   ORDER BY name DESC</span></span><br><span class="line"><span class="string">                   &quot;</span><span class="string">&quot;&quot;</span>;</span><br><span class="line">        System.out.println(s);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h3><p>和输出相比，Java的输入就要复杂得多。</p>
+<p>我们先看一个从控制台读取一个字符串和一个整数的例子：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Scanner scanner = <span class="keyword">new</span> Scanner(System.in); <span class="comment">// 创建Scanner对象</span></span><br><span class="line">        System.out.print(<span class="string">&quot;Input your name: &quot;</span>); <span class="comment">// 打印提示</span></span><br><span class="line">        String name = scanner.nextLine(); <span class="comment">// 读取一行输入并获取字符串</span></span><br><span class="line">        System.out.print(<span class="string">&quot;Input your age: &quot;</span>); <span class="comment">// 打印提示</span></span><br><span class="line">        <span class="keyword">int</span> age = scanner.nextInt(); <span class="comment">// 读取一行输入并获取整数</span></span><br><span class="line">        System.out.printf(<span class="string">&quot;Hi, %s, you are %d\n&quot;</span>, name, age); <span class="comment">// 格式化输出</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>然后，创建<code>Scanner</code>对象并传入<code>System.in</code>。<code>System.out</code>代表标准输出流，而<code>System.in</code>代表标准输入流。直接使用<code>System.in</code>读取用户输入虽然是可以的，但需要更复杂的代码，而通过<code>Scanner</code>就可以简化后续的代码。</p>
+<p>有了<code>Scanner</code>对象后，要读取用户输入的字符串，使用<code>scanner.nextLine()</code>，要读取用户输入的整数，使用<code>scanner.nextInt()</code>。<code>Scanner</code>会自动转换数据类型，因此不必手动转换。</p>
+<p>要判断引用类型的变量内容是否相等，必须使用<code>equals()</code>方法：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        String s1 = <span class="string">&quot;hello&quot;</span>;</span><br><span class="line">        String s2 = <span class="string">&quot;HELLO&quot;</span>.toLowerCase();</span><br><span class="line">        System.out.println(s1);</span><br><span class="line">        System.out.println(s2);</span><br><span class="line">        <span class="keyword">if</span> (s1.equals(s2)) <span class="comment">//&quot;==&quot;不行</span></span><br><span class="line">        &#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;s1 equals s2&quot;</span>);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;s1 not equals s2&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="for-each循环"><a href="#for-each循环" class="headerlink" title="for each循环"></a>for each循环</h3><p><code>for</code>循环经常用来遍历数组，因为通过计数器可以根据索引来访问数组的每个元素：</p>
+<p>但是，很多时候，我们实际上真正想要访问的是数组每个元素的值。Java还提供了另一种<code>for each</code>循环，它可以更简单地遍历数组：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span>[] ns = &#123; <span class="number">1</span>, <span class="number">4</span>, <span class="number">9</span>, <span class="number">16</span>, <span class="number">25</span> &#125;;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> n : ns) &#123;</span><br><span class="line">            System.out.println(n);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="label-类goto"><a href="#label-类goto" class="headerlink" title="label(类goto)"></a>label(类goto)</h3><p>当我们需要跳出或结束多重循环时，除了在每一个循环体后面加一个break（continue）外，还可以通过label（标号）跳出多重循环（有点类似与goto语句），如下例：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		Scanner in = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">		<span class="keyword">int</span> amount = in.nextInt();</span><br><span class="line">		<span class="comment">//使用label（标号）跳出多重循环</span></span><br><span class="line">		OUT:</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> one = <span class="number">0</span>; one &lt;= amount; ++one) &#123;</span><br><span class="line">			<span class="keyword">for</span> (<span class="keyword">int</span> five = <span class="number">0</span>; five &lt;= amount / <span class="number">5</span>; ++five) &#123;</span><br><span class="line">				<span class="keyword">for</span> (<span class="keyword">int</span> ten = <span class="number">0</span>; ten &lt;= amount / <span class="number">10</span>; ++ten) &#123;</span><br><span class="line">					<span class="keyword">for</span> (<span class="keyword">int</span> twenty = <span class="number">0</span>; twenty &lt;= amount / <span class="number">20</span>; ++twenty) &#123;</span><br><span class="line">						<span class="keyword">if</span> (one + five * <span class="number">5</span> + ten * <span class="number">10</span> + twenty * <span class="number">20</span> == amount) &#123;</span><br><span class="line">							System.out.println(one + <span class="string">&quot;张1元，&quot;</span> + five + <span class="string">&quot;张5元，&quot;</span> + ten + <span class="string">&quot;张10元，&quot;</span> + twenty + <span class="string">&quot;张20元。&quot;</span>);</span><br><span class="line">							<span class="keyword">break</span> OUT;  <span class="comment">//此break可以跳出整个多重循环</span></span><br><span class="line">						&#125;</span><br><span class="line">					&#125;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="快速打印数组内容"><a href="#快速打印数组内容" class="headerlink" title="快速打印数组内容"></a>快速打印数组内容</h3><p>Java标准库提供了<code>Arrays.toString()</code>，可以快速打印数组内容</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Arrays;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span>[] ns = &#123; <span class="number">1</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">5</span>, <span class="number">8</span> &#125;;</span><br><span class="line">        System.out.println(Arrays.toString(ns));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="关于面对对象编程"><a href="#关于面对对象编程" class="headerlink" title="关于面对对象编程"></a>关于面对对象编程</h3><p><strong>class的作用有点类似于struct</strong></p>
+<h3 id="逐个读取string"><a href="#逐个读取string" class="headerlink" title="逐个读取string"></a>逐个读取string</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a=(<span class="keyword">int</span>)str.charAt(i)-<span class="string">&#x27;0&#x27;</span>;</span><br></pre></td></tr></table></figure>
+
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021/10/10/web%E5%89%8D%E7%AB%AF/" rel="prev" title="">
+      <i class="fa fa-chevron-left"></i> 
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#java-1"><span class="nav-number">1.</span> <span class="nav-text">java-1</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%B4%E6%96%87%E4%BB%B6"><span class="nav-number">1.1.</span> <span class="nav-text">头文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0"><span class="nav-number">1.2.</span> <span class="nav-text">学习笔记</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#n-n"><span class="nav-number">1.2.1.</span> <span class="nav-text">++n&#x2F;n++</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%8D%E7%A7%BB%E8%BF%90%E7%AE%97"><span class="nav-number">1.2.2.</span> <span class="nav-text">位移运算</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%8D%E8%BF%90%E7%AE%97"><span class="nav-number">1.2.3.</span> <span class="nav-text">位运算</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B3%E4%BA%8E%E8%BD%AC%E5%9E%8B"><span class="nav-number">1.2.4.</span> <span class="nav-text">关于转型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B5%AE%E7%82%B9%E6%95%B0"><span class="nav-number">1.2.5.</span> <span class="nav-text">浮点数</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%BA%A2%E5%87%BA"><span class="nav-number">1.2.5.1.</span> <span class="nav-text">溢出</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%BC%BA%E5%88%B6%E8%BD%AC%E5%9E%8B"><span class="nav-number">1.2.5.2.</span> <span class="nav-text">强制转型</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%9F%AD%E8%B7%AF%E8%BF%90%E7%AE%97"><span class="nav-number">1.2.6.</span> <span class="nav-text">短路运算</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AD%97%E7%AC%A6"><span class="nav-number">1.2.7.</span> <span class="nav-text">字符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BF%9E%E6%8E%A5"><span class="nav-number">1.2.8.</span> <span class="nav-text">字符串连接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A4%9A%E8%A1%8C%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="nav-number">1.2.9.</span> <span class="nav-text">多行字符串</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BE%93%E5%85%A5"><span class="nav-number">1.2.10.</span> <span class="nav-text">输入</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#for-each%E5%BE%AA%E7%8E%AF"><span class="nav-number">1.2.11.</span> <span class="nav-text">for each循环</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#label-%E7%B1%BBgoto"><span class="nav-number">1.2.12.</span> <span class="nav-text">label(类goto)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BF%AB%E9%80%9F%E6%89%93%E5%8D%B0%E6%95%B0%E7%BB%84%E5%86%85%E5%AE%B9"><span class="nav-number">1.2.13.</span> <span class="nav-text">快速打印数组内容</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B3%E4%BA%8E%E9%9D%A2%E5%AF%B9%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B"><span class="nav-number">1.2.14.</span> <span class="nav-text">关于面对对象编程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%80%90%E4%B8%AA%E8%AF%BB%E5%8F%96string"><span class="nav-number">1.2.15.</span> <span class="nav-text">逐个读取string</span></a></li></ol></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">alcohol</p>
+  <div class="site-description" itemprop="description">while(1)rp++;</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">10</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">alcohol</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+    <span title="站点总字数">16k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">14 分钟</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  
+  <script color='0,0,255' opacity='0.5' zIndex='-1' count='99' src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+<script src="/js/bookmark.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"search":null,"path":"search.xml","field":"post","format":"html","limit":10000,"encrypt":{"enable":true},"log":false});</script></body>
+</html>
